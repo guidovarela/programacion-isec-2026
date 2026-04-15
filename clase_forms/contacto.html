@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro en la Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>    
+                Sitio
+            </h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container" id="contacto">
+        <div>
+            <a href="index.html"><- volver</a>
+        </div>
+        <!-- form Contacto -->
+        <div class="titleSection">
+            <h2>
+                Registrate en el sitio
+            </h2>
+             <span>(todos los campos son obligatorios)</span> 
+        </div>
+        
+
+        <form action="mailto:info@ejemplo.com" method="post">
+        <!-- 
+        action: destino de los datos del formulario
+        method: método de envío (GET o POST)
+        -->
+
+            <div>
+                <label>Nombre y Apellido:
+                    <input type="text" name="nombre" required placeholder="escribe tu nombre">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Email:
+                    <input type="email" name="email" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Fecha de Nacimiento:
+                    <input type="date" name="fecha_nacimiento" required>
+                </label>
+            </div>
+            <div>
+                Intereses: <br>
+                <label>
+                    <input type="checkbox" name="tecnologia" value="true" class="ajustarInputs"> Tecnología <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="arte" value="true" class="ajustarInputs"> Arte <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="deportes" value="true" class="ajustarInputs"> Deportes <br>
+                </label>
+                <!-- Checkbox: incluir value="" -->
+            </div>
+            <div>Resisis en CABA?
+                <label>
+                    <input type="radio" name="reside_caba" value="si"> Sí
+                </label>
+                <label>
+                    <input type="radio" name="reside_caba" value="no"> No
+                </label>
+                <!-- Tip: las opciones de radio deben compartir el mismo nombre -->
+            </div>
+            <div>
+                Ubicacion
+                <label>
+                    <select name="ubicacion" required>
+                        <option value="">Selecciona tu ubicación</option>
+                        <option value="caba">CABA</option>
+                        <option value="gba">GBA</option>
+                        <option value="santa fe">Santa Fe</option>
+                        <option value="cordoba">Córdoba</option>
+                    </select>
+            </div>
+            <div>
+                <label>
+                    Nombre de Usuario:
+                    <input type="text" name="nombre_usuario" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Contraseña (entre 8 y 20 caracteres):
+                    <input type="password" name="contraseña" required minlength="8" maxlength="20">
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Registrarse">
+            </div>
+    </section>
+
+    <footer>
+        <p>
+            Sitio de Registro - Todos los derechos reservados &copy; 2026
+        </p>
+    </footer>
+
+</body>
+</html>

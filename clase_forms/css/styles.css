@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+header,footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 2em;
+    text-align: center;
+}
+footer{
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section .titleSection{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1em;
+}
+/* Formulario */
+/* selectores anidados */
+#contacto form{
+    width: 60%;
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 2%;
+    margin: 0 auto;
+    }
+    #contacto form div{
+        margin-bottom: 1.2em;
+    }
+    #contacto form input, #contacto form select{
+        width: 100%;
+        padding: 0.5em;
+        border-radius: 5px;
+        border: 1px solid #ccc;       
+    }
+    #contacto form input[type="radio"]{
+        width: auto;
+    }
+    /* hack */
+    .ajustarInputs{
+        width: auto !important;
+    }
+    /*pseudo-clase
+        :hover para cambiar el estilo al pasar el mouse por encima
+        :active para cambiar el estilo al hacer clic en el elemento
+        :valid para aplicar estilos a los campos que cumplen con las validaciones
+        :invalid para aplicar estilos a los campos que no cumplen con las validaciones
+    */
+    #contacto form input[type="submit"]{
+        background-color: #ca2e2e;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    #contacto form input[type="submit"]:hover{
+            background-color: #333;
+        }
