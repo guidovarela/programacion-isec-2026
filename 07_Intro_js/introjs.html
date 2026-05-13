@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro JS</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+/>
+</head>
+<body>
+
+    
+    <button type="button" onclick="salir()">
+        salir del sitio
+    </button>
+    
+    
+    <h2>Aplicacion de <a href="https://fancyapps.com/">
+        Fancybox</a>
+    </h2>
+    <a href="img/gatito.jpg" data-fancybox >Gato</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+        });
+    </script>
+
+    <script src="js/cuadrosDialogo.js"></script>
+
+</body>
+</html>
