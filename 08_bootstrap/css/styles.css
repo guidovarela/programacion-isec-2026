@@ -1,0 +1,13 @@
+
+
+.bg1{
+    background-color: rgb(18, 138, 50);
+}
+.slider{
+    height: 300px;
+    background: linear-gradient(30deg, rgb(73, 20, 172), rgb(144, 90, 232));
+    margin-bottom: 5em !important;
+}
+.col-imagen{
+    background-color: rgb(108, 108, 108);
+}
